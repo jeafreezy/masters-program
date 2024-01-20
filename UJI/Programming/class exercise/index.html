@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Jolaiya Portfolio</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <section id="introduction">
+        <div>
+            <p>Hey 👋 , </p>
+            <h2>I'm Emmanuel Jolaiya.</h2>
+            <p id="career">An   EO & Geospatial Software Engineer.</p>
+        </div>
+
+        <div>
+            <img src="./img/emmanuel_jolaiya.jpg" alt="Emmanuel Jolaiya Image">
+        </div>
+    </section>
+    <section class="important">
+        <h1>About Me</h1>
+        <p>
+            An Earth Observation and Geospatial Software Engineer with a solid background in Remote Sensing and GIS. He loves to volunteer, drive communities, and build cool stuff with technology. He also flourishes in a multi-disciplinary team.
+           He is currently a Masters Student of  <a href="https://mastergeotech.info" target="_blank">GeoTech</a>  at UJI, Spain.
+        </p>
+    
+        <h1>Skills</h1>
+        <ul>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>React JS</li>
+            <li>Django</li>
+            <li>FastAPI</li>
+            <li>SQL & Spatial SQL</li>
+        </ul>
+
+        <h1>Hobbies</h1>
+        <ul>
+            <li>Swimming</li>
+            <li>Gyming 🏋🏾‍♂️</li>
+            <li>Table Tennis</li>
+            <li>Cylcing 🚴🏾‍♂️</li>
+            <li>Dancing 🕺🏾</li>
+        </ul>
+
+    </section>
+    <section class="important">
+        <h1>Feedback</h1>
+        <p>What do you think of my website?</p>
+        <form>
+            <input type="radio" id="option1" name="appreciation" value="It's great!">
+            <label for="option1">It's great!</label><br>
+            <input type="radio" id="option2" name="appreciation" value="So and so.">
+            <label for="option2">So and so.</label><br>
+            <input type="radio" id="option3" name="appreciation" value="Quite poor!">
+            <label for="option3">Quite poor!</label>
+            <br>
+            <br>
+            <small>Tell me know how you really feel.</small>
+            <br>
+            <br>
+            <textarea type="text" placeholder="Express yourself..." id="mytextID" rows="10" cols="100"></textarea>
+            <br>
+            <br>
+            <button type="submit" onclick="handleForm()">Submit</button>
+        </form>
+        <form>
+            <input type="button" id="myButton" value="Do it!" name="mybutton"
+           onclick="doIt()">
+            </form>
+    </section>
+</body>
+</html>

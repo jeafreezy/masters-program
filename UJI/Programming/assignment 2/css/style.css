@@ -1,0 +1,147 @@
+/* General styling for the body begins  */
+body{
+    background-color: #030E3C;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+/* General styling for the body ends  */
+
+/* Styling for the game container starts  */
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 250px auto;
+    width: 900px;
+    gap: 0 50px;
+    overflow: auto;
+    height: 700px;
+    padding: 40px;
+
+}
+
+
+/* Styling for links to make them white. They are blue by default and are not visible on the sidepanel  */
+a{
+    color: white;
+}
+
+/* Styling for the game container ends  */
+
+/* Sidepanel styling starts  */
+#side-panel{
+    width: 100%;
+    padding: 15px;
+    overflow: auto;
+    height: 100%;
+    background-color: #030E3C;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+
+}
+
+/* Sidepanel styling ends  */
+
+/* Table container and related styling starts */
+#tbl{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    margin: auto auto;
+    padding: 2px;
+}
+
+/* Styling for the td element and the image within it*/
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+td img{
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+/* tr styling to give it a chess grid like feel. Alternating the background color for even and odd grids.
+*/
+tr:nth-child(even) {
+    background-color: #030E3C;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #0B3751;
+
+}
+tr:nth-child(even) td:nth-child(even) {
+background-color: #0B3751;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+background-color: #030E3C;
+}
+
+
+tr:nth-child(odd) td:nth-child(even) {
+background-color: #030E3C;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+background-color: #0B3751;
+}
+
+/* Image styling  */
+img{
+    width: 100%;
+
+}
+
+/* Table container and related styling ends */
+/* Styling for important information panel starts. i.e score and turns left */
+.info{
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    
+}
+.info span{
+    color: #FA51E2;
+}
+
+/* bounce animation when the user wins extra point  */
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.score-animation {
+    animation-name: bounce;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    color: rgb(170, 221, 170);
+}
+.score-animation > span{
+    color: rgb(170, 221, 170);
+}
+/* Styling for important information panel ends */
+
+/* button styling starts*/
+button{
+    padding: 10px;
+    background-color: #FA51E2;
+    border: none ;
+    cursor: pointer;
+}
+
+/* button styling ends */

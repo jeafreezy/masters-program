@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejeweled</title>
+    <!-- link to the stylesheet  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="container">
+        <aside id="side-panel">
+            <header>
+                <img src="./img/Bejeweled_logo_original.webp" alt="Bejeweled Logo" title="Bejeweled Logo">
+            </header>
+            <!-- The score and turns panel starts -->
+            <section class="info">
+                <div class = ''>Score: <span  id="score"></span></div>
+                <div>Turns: <span id="turns"></span></div>
+            </section>
+            <!-- The score and turns panel ends -->
+            <!-- Form begins.  -->
+            <form id="input-form">
+                <p>What are the dimensions of the grid you want to play in?</p>
+                <label for="rows">Amount of rows:</label>
+                <input type="text" name="rows" id="rows">
+                <br>
+                <br>
+                <label for="columns">Amount of columns:</label>
+                <input type="text" name="columns" id="columns">
+                <br>
+                <br>
+                <button id="play-button" type="button">Let's play!</button>
+                <br>
+                <br>
+                <button type="button" id="reset-button" >Quit Game</button>
+            </form>
+            <!-- Form ends  -->
+            <!-- Footer begins -->
+            <footer>
+                <p>Author: <a href="emailto:emmanuel.jolaiya@uji.es" >Emmanuel Jolaiya</a></p>
+                <p>Programming (SJL001).</p>
+                <p>Erasmus Mundus MSc in Geospatial Technologies Academic course 2023/2024.</p>
+                <p><a href="https://uji.es" > University Jaume I, Spain.</a></p>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/diamond" title="diamond icons">Diamond icons created by Freepik - Flaticon</a>
+            </footer>
+            <!-- Footer ends -->
+        </aside>
+        <!-- the location of the injected table  -->
+        <div id="tbl"></div>
+    </section>  
+    <!-- link to the javascript  -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

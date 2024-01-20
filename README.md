@@ -1,1 +1,1 @@
-# masters-program
+### Records of some exercises and projects in my [Erasmus Master of Science in Geospatial Technologies](https://mastergeotech.info/).

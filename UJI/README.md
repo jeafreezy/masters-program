@@ -1,0 +1,1 @@
+### Been a joint masters program, this folder contain some of the activities carried out in Universitat Jaume I (UJI), Castellón, Dept. Lenguajes y Sistemas Informaticos (LSI), Castellón, Spain.

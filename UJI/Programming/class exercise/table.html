@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Jolaiya Portfolio</title>
+    
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+
+    <section>
+        <h1> We are going to inject a table here.</h1>
+        <form>
+            <label for="rows">Amount of rows:</label>
+            <input type="text" name="rows" id="rows" onfocusout="validateInput(event)">
+
+            <label for="columns">Amount of columns:</label>
+            <input type="text" name="columns" id="columns" onfocusout="validateInput(event)">
+            <br>
+            <br>
+            <button type="button" onclick="injectTable(tbl,rows,columns)">Submit</button>
+        </form>
+        <div id="tbl"></div>
+    </section>
+    <script src="./js/table.js"></script>
+</body>
+</html>
